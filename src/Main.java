@@ -37,15 +37,17 @@ public class Main {
 
     }
 
-    public static void year(int a) {
+    public static boolean year(int a) {
         if (a % 100 == 0 && a % 400 == 0){
             System.out.println("Год високосный");
-
+                return true;
         }else if (a % 4 == 0 && a % 100 != 0) {
             System.out.println("Год високосный");
+            return true;
 
         }else{
             System.out.println("Год не високосный");
+            return false;
         }
 
     }
